@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local | Storage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <style>
+    body {
+      font-family: "Roboto", serif;
+    }
+    #tableDataUser tbody tr td {
+      border: 1px solid #99a3a4;
+      text-align: center;
+    }
+    #tableDataUser thead tr th {
+      border: 1px solid #99a3a4;
+      text-align: center;
+    }
+    #tableDataUser {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand text-light">HeakYangkov</a>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div style="border: 1px solid #99a3a4">
+            <form class="form p-4">
+              <div class="form-group">
+                <h3 class="card-header text-center bg-info text-light">
+                  Register Spider-Man
+                </h3>
+                <label for="name">Name: </label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="your name"
+                />
+                <label for="email">Email : </label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="enter your email."
+                />
+                <input
+                  class="buttonEdit btn btn-success mt-2"
+                  type="submit"
+                  id="submit"
+                  onclick="onSaveClick()"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="table-responsive">
+            <h3 class="card-header text-center bg-info text-light">
+              List-of fan Spider-Man
+            </h3>
+            <table id="tableDataUser" class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark text-white fixed-bottom">
+      <img src="x5a44tta8gk11.webp" class="card-img" alt="..." />
+    </div>
+
+    <script src="locale.js"></script>
+  </body>
+</html>
